@@ -1,0 +1,34 @@
+GET http://localhost:3333/contacts
+
+###
+
+POST http://localhost:3333/contacts
+Content-Type: application/json
+
+{
+    "name": "Lucas",
+    "contacts": {
+        "email": "lucas@icloud.com",
+        "phoneNumber": "123456789",
+        "address": "Rua das Flores, 123"
+    }
+}
+
+###
+
+PUT http://localhost:3333/contacts/82444847-51ad-47d6-ad5d-d66250af65ed
+Content-Type: application/json
+
+{
+    "name": "Lucas",
+    "contacts": {
+        "email": "afinaléesteomeuemail@icloud.com",
+        "phoneNumber": "987654321",
+        "address": "Avenida das Rosas, 456"
+    }
+}
+
+###
+
+
+DELETE http://localhost:3333/contacts/0031089a-cdf2-4f6f-b440-97369cd8c91e
